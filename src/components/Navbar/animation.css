@@ -1,0 +1,88 @@
+
+.slide-sideNav-right {
+	-webkit-animation: slide-sideNav-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-sideNav-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-sideNav-right {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes slide-sideNav-right {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+
+.slide-sideNav-left {
+	-webkit-animation: slide-sideNav-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-sideNav-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-sideNav-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            
+  }
+  100% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+            
+  }
+}
+@keyframes slide-sideNav-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            
+  }
+  100% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+            
+  }
+}
+
+
+.slide-sideNav-item {
+	-webkit-animation: slide-sideNav-item 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-sideNav-item 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-sideNav-item {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 0;
+  }
+}
+@keyframes slide-sideNav-item {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 0;
+  }
+}

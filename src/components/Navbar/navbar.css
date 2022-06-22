@@ -1,0 +1,4 @@
+.navItem:hover .navItem__box{
+    display: block;
+}
+
