@@ -1,12 +1,9 @@
-import logoRed from "../../assets/logo_red_bain.svg";
-import logo from '../../assets/venture_desk.png';
+import logo from "../../assets/venture_desk.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import IndustriesDropdown from "./dropdowns/IndustriesDropdown";
-import ConsultingDropdown from './dropdowns/ConsultingDropdown';
-import InsightDropdown from './dropdowns/InsightsDropdown';
-import AboutDropdown from './dropdowns/AboutDropdown';
-import CareersDropdown from './dropdowns/CareersDropdown';
+import ConsultingDropdown from "./dropdowns/ConsultingDropdown";
+import AboutDropdown from "./dropdowns/AboutDropdown";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -28,8 +25,8 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "scroll";
-  } 
-  
+  }
+
   return (
     <div>
       {/* SideNav Shadow */}
@@ -72,8 +69,9 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
         {/* LOGO START */}
         <Link to="/">
           <img
-            className={`group-hover:block pl-5 mob:w-[70%] stab:w-[80%] ltab:w-[90%] laptop:w-[100%] `}
-            src={logoRed}
+            className={`group-hover:block pl-5 mob:w-[70%] stab:w-[80%] ltab:w-[90%] laptop:w-[55%] -mt-2  `}
+            src={logo}
+            alt="venture desk logo"
           />
         </Link>
         {/* LOGO END*/}
@@ -122,10 +120,8 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
 
 export default NavbarMain;
 
-
-
-
-{/* 
+{
+  /* 
 const DropDown = ({children}) => {
   return (
     <div class="navItem__box absolute hidden top-[105px] left-[110px] w-[1290px] bg-white  px-6 py-8">
@@ -134,4 +130,5 @@ const DropDown = ({children}) => {
   );
 }
 
-export default DropDown */}
+export default DropDown */
+}

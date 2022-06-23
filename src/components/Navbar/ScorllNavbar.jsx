@@ -1,4 +1,4 @@
-import logoRed from "../../assets/logo_red_bain.svg";
+import logo from "../../assets/venture_desk.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useState } from "react";
@@ -7,12 +7,12 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const ScorllNavbar = ({ navbar }) => {
   const [showSideNav, setShowSideNav] = useState(false);
-  console.log(showSideNav)
+  console.log(showSideNav);
   if (showSideNav) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "scroll";
-  } 
+  }
   return (
     <div>
       {/* SideNav Shadow */}
@@ -28,27 +28,30 @@ const ScorllNavbar = ({ navbar }) => {
         <div className="" onClick={() => setShowSideNav(true)}>
           {showSideNav && (
             <div className="absolute top-0 left-0 flex">
-              <Container 
-              showSideNav={showSideNav}
-              setShowSideNav={setShowSideNav}
-               />
+              <Container
+                showSideNav={showSideNav}
+                setShowSideNav={setShowSideNav}
+              />
             </div>
           )}
           <AiOutlineMenu className="mob:text-base stab:text-lg ltab:text-xl laptop:text-2xl" />
-          
         </div>
         {/* close button */}
-          {showSideNav && (
-            <button
-              type="button"
-              className="absolute top-0 mob:left-[250px] stab:left-[360px] bg-[#c00] text-white text-2xl w-12 h-12 slide-sideNav-right"
-              onClick={() => setShowSideNav(!showSideNav)}
-            >
-              <AiOutlineClose className="mx-auto " />
-            </button>
-            
-          )}
-        <img className="mob:w-40 stab:w-64 mx-[15%]" src={logoRed} />
+        {showSideNav && (
+          <button
+            type="button"
+            className="absolute top-0 mob:left-[250px] stab:left-[360px] bg-[#c00] text-white text-2xl w-12 h-12 slide-sideNav-right"
+            onClick={() => setShowSideNav(!showSideNav)}
+          >
+            <AiOutlineClose className="mx-auto " />
+          </button>
+        )}
+        <img
+          // className="mob:w-40 stab:w-64 mx-[15%]"
+          className="bg-black laptop:w-[40px] mx-[15%]"
+          src={logo}
+          alt="venture desk logo"
+        />
         <AiOutlineSearch className="text-slate-400 mob:text-base stab:text-lg ltab:text-xl laptop:text-2xl mob:mt-1 stab:mt-0" />
       </div>
     </div>
