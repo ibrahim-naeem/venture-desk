@@ -4,15 +4,15 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./animation.css";
 
-const  P= ({ text }) => (
+const P = ({ text }) => (
   <p className="text-slate-500 mob:text-[10px] stab:text-base font-semibold hover:text-[#c00]  mob:mr-2 ltab:mr-5">
     {text}
   </p>
 );
 
 export const Navbar = ({ h3, p1, p2, p3, p4 }) => {
-  const [navPosition, setNavPosition] = useState(false)
-  
+  const [navPosition, setNavPosition] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const offset = window.pageYOffset;
@@ -27,7 +27,7 @@ export const Navbar = ({ h3, p1, p2, p3, p4 }) => {
   return (
     <div
       className={`w-[100vw] flex justify-between mob:px-2 ltab:px-[120px] bg-[#fff] border-b ${
-        navPosition && " w-[100vw] fixed mob:top-[53px] stab:top-[60px]"
+        navPosition && " w-[100vw] fixed mob:top-[53px] stab:top-[70px]"
       } `}
     >
       <div className="flex mob:py-1 stab:py-3 ">
@@ -62,13 +62,3 @@ export const Navbar = ({ h3, p1, p2, p3, p4 }) => {
     </div>
   );
 };
-
-
-
- 
-
- 
-
- 
-
- 

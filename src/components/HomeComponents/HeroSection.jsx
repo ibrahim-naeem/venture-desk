@@ -74,18 +74,34 @@ class HeroSection extends React.Component {
   render() {
     return (
       <div className="relative">
-        <div className="mob:h-[25vh] stab:h-[40vh] ltab:h-[85vh] laptop:h-[100vh] overflow-hidden">
+        <div className="mob:h-[25vh] stab:h-[40vh] ltab:h-[85vh] laptop:h-[90vh] overflow-hidden">
           {this.state.currentImage == 0 && (
-            <img src={heroImage1} className="kenburns-top w-[100vw] " />
+            <img
+              src={heroImage1}
+              className="kenburns-top w-[100vw]"
+              alt="hero section background"
+            />
           )}
           {this.state.currentImage == 1 && (
-            <img src={heroImage2} className="kenburns-top w-[100vw] " />
+            <img
+              src={heroImage2}
+              className="kenburns-top w-[100vw]"
+              alt="hero section background"
+            />
           )}
           {this.state.currentImage == 2 && (
-            <img src={heroImage3} className="kenburns-top w-[100vw] " />
+            <img
+              src={heroImage3}
+              className="kenburns-top w-[100vw]"
+              alt="hero section background"
+            />
           )}
           {this.state.currentImage == 3 && (
-            <img src={heroImage4} className="kenburns-top w-[100vw] " />
+            <img
+              src={heroImage4}
+              className="kenburns-top w-[100vw]"
+              alt="hero section background"
+            />
           )}
         </div>
         <div className="flex justify-around relative mob:-top-[60px] stab:-top-[100px]">

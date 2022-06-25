@@ -1,13 +1,13 @@
-import { IoMdArrowDropright } from "react-icons/io";
+import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
+
 import { Link } from "react-router-dom";
 
-const Item = ({ text, arrowleft, arrowRight }) => (
+const Item = ({ text, arrow }) => (
   <div className="flex p-3 ">
-    {arrowleft && <IoMdArrowDropright size="22" className="mt-[1px]"/>}
-    <p className="mob:text-xs stab:text-base text-black pr-2 mob:mt-1 cursor-pointer hover:text-[#c00]">
+    {arrow && <IoMdArrowDropleft className="text-xl mt-0.5 mr-1" />}
+    <p className="mob:text-xs stab:text-base text-black mob:mt-1 laptop:mt-0 cursor-pointer hover:text-[#c00]">
       {text}
     </p>
-    {arrowRight && <IoMdArrowDropright size="22" className="mt-[1px]"/>}
   </div>
 );
 
@@ -15,7 +15,7 @@ const NavSubList = ({ setNavItem }) => {
   return (
     <div className="">
       <div onClick={() => setNavItem(false)}>
-        <Item text="Main Menu" arrowleft="true" />
+        <Item text="Main Menu" arrow="true" />
       </div>
 
       <div className="border-b mob:w-[200px] stab:w-[360px]" />
@@ -56,4 +56,3 @@ const NavSubList = ({ setNavItem }) => {
 };
 
 export default NavSubList;
-     

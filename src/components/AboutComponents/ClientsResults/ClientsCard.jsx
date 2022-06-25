@@ -8,31 +8,31 @@ import img7 from "../../../assets/AC-7.jpg";
 import img8 from "../../../assets/AC-8.jpg";
 import { FiBookmark } from "react-icons/fi";
 
-const Card = ({img, small, h1, p, border, style }) => {
-    return (
-      <div
-        className={`mob:w-full ltab:w-1/4 px-4 mob:my-8 ltab:my-5 ${
-          border && "ltab:border-r"
-        }`}
-      >
-        <img src={img} />
-        <p className="mob:text-xs ltab:text-sm font-semibold text-[#c00] py-3">
-          {small}
-        </p>
-        <h1 className="mob:text-sm stab:text-base ltab:text-lg font-semibold pb-3 hover:text-[#c00]">
-          {h1}
-        </h1>
-        <p className="mob:text-xs stab:text-sm ltab:text-base">{p}</p>
-        <FiBookmark
-          size="20"
-          color="grey"
-          className={`ml-auto mob:mt-10 ltab:mt-7 ${style}`}
-        />
-      </div>
-    );
-}
+const Card = ({ img, small, h1, p, border, style }) => {
+  return (
+    <div
+      className={`mob:w-full ltab:w-1/4 px-4 mob:my-8 ltab:my-5 ${
+        border && "ltab:border-r"
+      }`}
+    >
+      <img src={img} alt="" />
+      <p className="mob:text-xs ltab:text-sm font-semibold text-[#c00] py-3">
+        {small}
+      </p>
+      <h1 className="mob:text-sm stab:text-base ltab:text-lg font-semibold pb-3 hover:text-[#c00]">
+        {h1}
+      </h1>
+      <p className="mob:text-xs stab:text-sm ltab:text-base">{p}</p>
+      <FiBookmark
+        size="20"
+        color="grey"
+        className={`ml-auto mob:mt-10 ltab:mt-7 ${style}`}
+      />
+    </div>
+  );
+};
 
-const ClientsCard = ({ modal  }) => {
+const ClientsCard = ({ modal }) => {
   return (
     <div>
       <div
@@ -138,4 +138,4 @@ const ClientsCard = ({ modal  }) => {
   );
 };
 
-export default ClientsCard
+export default ClientsCard;

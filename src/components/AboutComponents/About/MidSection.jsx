@@ -4,22 +4,25 @@ import TextDivider from "../shared/TextDivider";
 import LearnMoreBox from "../shared/LearnMoreBox";
 import ImageZoomBox from "../shared/ImageZoomBox";
 import img from "../../../assets/OP-box-image.webp";
-import img1 from "../../../assets/AI-1.jpg"
+import img1 from "../../../assets/AI-1.jpg";
 import img2 from "../../../assets/AI-2.webp";
 import img3 from "../../../assets/AI-3.png";
 import OurTeamSection from "../shared/OurTeamSection";
-
-
 
 const MidSection = () => {
   return (
     <>
       <CenteredText
-        text="We're a global consultancy that helps the world’s most ambitious change makers define the future. Across 63 offices in 38 countries, we work alongside our clients as one team with a shared ambition to achieve extraordinary results, outperform the competition and redefine industries. We complement our tailored, integrated expertise with a vibrant ecosystem of digital innovators to deliver better, faster and more enduring outcomes. Our 10-year commitment to invest more than $1 billion in pro bono services brings our talent, expertise and insight to organizations tackling today’s urgent challenges in education, racial equity, social justice, economic development and the environment. "
+        text="Venture Desk brings ideas to life, leveraging modern technologies.
+        Today, it has grown into a full-cycle, mobile-first software development company,
+         with the highest team satisfaction in the industry, independent analyst recognition, 
+         and an ever-growing list of delighted clients who work with us again and again. 
+         We are proud to have worked with Estee Lauder, Clinique, Engro, Swatch Group, Politico, 
+         and OOMCO. We have helped dozens of startups with modern technologies."
         style="text-justified"
       />
       {/* Video  */}
-      <div className="w-[100vw] text-justified mt-10 ">
+      {/* <div className="w-[100vw] text-justified mt-10 ">
         
           <iframe
             src="https://www.youtube.com/embed/r9jwGansp1E"
@@ -35,30 +38,30 @@ const MidSection = () => {
           limits, those with the ambition to lead and the courage to adapt.
           Watch the video to learn more.
         </p>
-      </div>
+      </div> */}
       {/* Video end */}
       <div className="mob:my-5 stab:my-10 ltab:my-20">
         <TextDivider text="Our Firm" />
         <div className="w-[80vw] mx-auto flex flex-wrap mb-14 ">
           <Characteristics
-            text="What We Believe"
-            p="We believe those who challenge themselves to be exceptional should champion that spirit in others. And that doing the right thing is rarely easy, but always worth it."
+            text="Startup partner program™"
+            p="We have created Startup Partner Program™ for funding early stage startups. We make small investments in return for small stakes in the startups we build."
           />
           <Characteristics
-            text="What We Do"
-            p="Global leaders come to us to solve industry-defining challenges. Our unique approach to change management helps structure, orchestrate and enable sustained results."
+            text="Rapid strategy workshop™"
+            p="Building a successful product is an art. The dozens of clients have used our Rapid Strategy Workshop™ model to get multi-million dollar revenue and valuations."
           />
           <Characteristics
-            text="Awards & Recognition"
-            p="We’re proud to be consistently recognized as one of the world’s best places to work, a champion of diversity and a model of social responsibility."
+            text="Rapid mvp development™"
+            p="Do you want to test the idea with minimum investment and time? – Build Minimum Viable Product through our Rapid MVP Development™."
           />
           <Characteristics
-            text="Worldwide Offices"
-            p="Across 63 offices in 38 countries, we work as one global team to help clients outperform their competition and redefine their industries."
+            text="Our approach"
+            p="To be the number one choice for businesses when it comes to digital product development, design, quality, and innovation."
           />
           <Characteristics
-            text="Media Center"
-            p="Our people are continually sought out by global, local and industry media for their unique insights and expert perspectives."
+            text="Our mission"
+            p="To help businesses become competitive with the power of digital innovation, outstanding design, and emerging technologies via building intelligent digital products."
           />
           {/*Learn Box Section */}
           <LearnMoreBox
@@ -111,7 +114,8 @@ const MidSection = () => {
           {/* Image Box Section */}
           <ImageZoomBox
             img={img3}
-            text="We work as one global team to help you achieve the extraordinary"a
+            text="We work as one global team to help you achieve the extraordinary"
+            a
           />
           {/* IMage Bocx Section */}
           <div className="mx-auto relative top-10">
@@ -131,6 +135,6 @@ const MidSection = () => {
       </div>
     </>
   );
-}
+};
 
-export default MidSection
+export default MidSection;

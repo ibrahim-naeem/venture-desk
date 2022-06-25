@@ -1,6 +1,7 @@
 import logo from "../../assets/venture_desk.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
+import { MdAlternateEmail } from "react-icons/md";
 import IndustriesDropdown from "./dropdowns/IndustriesDropdown";
 import ConsultingDropdown from "./dropdowns/ConsultingDropdown";
 import AboutDropdown from "./dropdowns/AboutDropdown";
@@ -13,6 +14,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const NavItem = ({ name }) => {
   return (
     <li className="px-5 font-bold ">
+      {/* <p className={`hover:text-[#c00] `}>{name}</p> */}
       <p className={`hover:text-[#c00]`}>{name}</p>
     </li>
   );
@@ -38,6 +40,12 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
           navbar ? "block" : "hidden"
         }`}
       >
+        {/* <div
+          className={` group-hover:text-gray-400 pr-5 ${
+            navMainColor ? "text-slate-400" : "text-white"
+          }`}
+        > */}
+
         <div
           className={` group-hover:text-gray-400 pr-5 ${
             navMainColor ? "text-slate-400" : "text-white"
@@ -69,7 +77,7 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
         {/* LOGO START */}
         <Link to="/">
           <img
-            className={`group-hover:block pl-5 mob:w-[70%] stab:w-[80%] ltab:w-[90%] laptop:w-[55%] -mt-2  `}
+            className={`group-hover:block pl-5 mob:w-[30%] stab:w-[35%] ltab:w-[45%] laptop:w-[50%] laptop:-mt-2  `}
             src={logo}
             alt="venture desk logo"
           />
@@ -77,11 +85,11 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
         {/* LOGO END*/}
 
         <ul
-          className={`flex mr-auto group-hover:text-black  ${
-            navMainColor ? navMainColor : "text-white"
+          className={`flex mr-auto group-hover:text-slate-400  ${
+            navMainColor ? "text-slate-400" : "text-white"
           }`}
         >
-          <div className="navItem mob:hidden laptop:block">
+          <div className="navItem mob:hidden laptop:block ">
             <NavItem name="Industries" />
             <IndustriesDropdown />
           </div>
@@ -98,20 +106,25 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
         </ul>
 
         <div className="flex mob:ml-auto">
+          <MdAlternateEmail
+            className={` mob:text-base stab:text-lg ltab:text-xl laptop:text-2xl stab:-mt-1 laptop:mt-0   
+            ${
+              navMainColor
+                ? "text-slate-400 "
+                : "text-white group-hover:text-slate-400 "
+            }`}
+          />
+
           <span
-            className={` mob:text-sm laptop:text-base font-semibold px-2 group-hover:text-slate-400 mob:-mt-1 stab:mt-0 ${
-              navMainColor ? "text-slate-400" : "text-white"
+            className={` mob:text-sm laptop:text-base font-bold px-2  mob:-mt-1 stab:mt-0     
+            ${
+              navMainColor
+                ? "text-slate-400"
+                : "text-white group-hover:text-slate-400 "
             }`}
           >
-            Explore
+            info@venturedesk.net
           </span>
-          <button>
-            <AiOutlineSearch
-              className={`group-hover:text-slate-400 mob:text-base stab:text-lg ltab:text-xl laptop:text-2xl stab:-mt-1 laptop:mt-0 ${
-                navMainColor ? "text-slate-400" : "text-white"
-              }`}
-            />
-          </button>
         </div>
       </div>
     </div>
@@ -119,16 +132,3 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
 };
 
 export default NavbarMain;
-
-{
-  /* 
-const DropDown = ({children}) => {
-  return (
-    <div class="navItem__box absolute hidden top-[105px] left-[110px] w-[1290px] bg-white  px-6 py-8">
-      {children}
-    </div>
-  );
-}
-
-export default DropDown */
-}

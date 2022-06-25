@@ -10,7 +10,6 @@ const SmallNavLink = ({ name }) => {
   );
 };
 
-
 const NavbarSmall = ({ navSmallColor }) => {
   return (
     <div className="flex justify-between bg-transparent  px-[140px] ">
@@ -37,7 +36,7 @@ const NavbarSmall = ({ navSmallColor }) => {
       </div>
       <div className=" mob:hidden laptop:block">
         <ul
-          className={`flex mr-auto group-hover:text-gray-400 ${
+          className={`flex mr-auto group-hover:text-slate-400 ${
             navSmallColor ? navSmallColor : "text-white"
           }`}
         >
