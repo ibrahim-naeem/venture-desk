@@ -10,7 +10,7 @@ import Questions from "../components/HomeComponents/Questions";
 
 const home = () => {
   return (
-    <div className="relative overflow-hidden w-100vw ">
+    <div className="relative overflow-hidden ">
       <Navbar />
       <HeroSection />
       <Questions />

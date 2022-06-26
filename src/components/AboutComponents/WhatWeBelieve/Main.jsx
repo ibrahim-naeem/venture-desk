@@ -6,19 +6,17 @@ import MidSection from "./MidSection";
 import CardSection from "./CardSection";
 import Passion from "./Passion";
 import img from "../../../assets/about.png";
-import ImageZoomBox from '../shared/ImageZoomBox';
+import ImageZoomBox from "../shared/ImageZoomBox";
 import Explore from "./Explore";
-
-
 
 const Main = () => {
   return (
     <div>
       <AboutHeroSection
         background={background}
-        small="About Bain"
+        small="About Venture Desk"
         main="What We Believe"
-        text="We believe that bold steps define the future. That the ambition to lead requires the courage to adapt. And that doing the right thing is rarely easy, but always worth it."
+        text="For us, success means a satisfied and happy client. We also strive for long-term relationships with clients based on trust."
       />
       <Navbar
         h3="What We Believe"
@@ -38,12 +36,3 @@ const Main = () => {
 };
 
 export default Main;
-
-
- 
-
- 
-
- 
-
- 

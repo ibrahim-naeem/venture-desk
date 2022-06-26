@@ -1,8 +1,8 @@
 import React from "react";
-import heroImage1 from "../../assets/hero-image1.webp";
-import heroImage2 from "../../assets/hero-image2.webp";
-import heroImage3 from "../../assets/hero-image3.webp";
-import heroImage4 from "../../assets/hero-image4.webp";
+import heroImage1 from "../../assets/slider-img-1.jpg";
+import heroImage2 from "../../assets/slider-img-2.jpg";
+import heroImage3 from "../../assets/slider-img-3.jpg";
+import heroImage4 from "../../assets/slider-img-4.jpeg";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 import "./animation.css";
@@ -11,7 +11,7 @@ const Intro = ({ title, heading, className }) => {
   return (
     <div className="w-[80%] text-white mob:ml-14 stab:ml-10  laptop:ml-[130px] xl:ml-20 stab:pl-10 relative mob:-top-6 stab:top-[50px] ltab:top-[120px] ">
       <p
-        className={`mob:text-xs stab:text-base ltab:text-lg font-bold ${className}`}
+        className={`mob:text-xs stab:text-base ltab:text-lg  laptop:w-[70%] ${className}`}
       >
         {title}
       </p>
@@ -99,52 +99,52 @@ class HeroSection extends React.Component {
           {this.state.currentImage == 3 && (
             <img
               src={heroImage4}
-              className="kenburns-top w-[100vw]"
+              className="kenburns-top w-[100vw] h-[90vh]"
               alt="hero section background"
             />
           )}
         </div>
         <div className="flex justify-around relative mob:-top-[60px] stab:-top-[100px]">
           <Text
-            title="M&A Report 2022"
+            title="AI and AR"
             textStyleing={`${
               this.state.currentImage == 0 ? "text-white" : "text-[#8398A5]"
             }`}
             barCondition={`${
               this.state.currentImage == 0 &&
-              "w-[100%] bg-[#c00] mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
+              "w-[100%] bg-white mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
             }`}
           />
           <Text
-            title="Customer Love"
+            title="Enterprise Development"
             textStyleing={`${
               this.state.currentImage == 1 ? "text-white" : "text-[#8398A5]"
             }`}
             barCondition={`${
               this.state.currentImage == 1 &&
-              "w-[100%] bg-[#c00] mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
+              "w-[100%] bg-white mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
             }`}
           />
 
           <Text
-            title="The Fabric of Belonging"
+            title="Mobile Applications"
             textStyleing={`${
               this.state.currentImage == 2 ? "text-white" : "text-[#8398A5]"
             }`}
             barCondition={`${
               this.state.currentImage == 2 &&
-              "w-[100%] bg-[#c00] mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
+              "w-[100%] bg-white mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
             }`}
           />
 
           <Text
-            title="The Working Future"
+            title="NonFungible Tokens"
             textStyleing={`${
               this.state.currentImage == 3 ? "text-white" : "text-[#8398A5]"
             }`}
             barCondition={`${
               this.state.currentImage == 3 &&
-              "w-[100%] bg-[#c00] mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
+              "w-[100%] bg-white mob:h-[1.5px] stab:h-1 ease-in duration-[3000ms]"
             }`}
           />
         </div>
@@ -153,32 +153,32 @@ class HeroSection extends React.Component {
           {this.state.currentImage == 0 && (
             <Intro
               className="slide-top"
-              title="M&A Report"
-              heading="Winnig in a white-hot M&A market"
+              title="Revolutionizing the world of augmented reality and bringing artificial intelligence to life."
+              heading="Artificial Intelligence and Augmented Reality "
             />
           )}
 
           {this.state.currentImage == 1 && (
             <Intro
               className="slide-top"
-              title="Customer Love"
-              heading="How to lead with Customer Love"
+              title="Unlock the potential of enterprise portals by integrating data repositories and content management systems into a single system that delivers seamless user experience."
+              heading="Revolutionizing Enterprises Digitally "
             />
           )}
 
           {this.state.currentImage == 2 && (
             <Intro
               className="slide-top"
-              title="The Fabric of Belonging"
-              heading="How to Weaven an Inclusive Culture"
+              title="Custom mobile apps. User experience & design. Engagement & intelligence. Native & cross-platform"
+              heading="Modernizing Mobile Platforms"
             />
           )}
 
           {this.state.currentImage == 3 && (
             <Intro
               className="slide-top"
-              title="The Working Future"
-              heading="It's time to change how we think about work"
+              title="Harness blockchain technology to bring real monetary value to your game, with unique asset ownership and investment opportunities."
+              heading="NFT Game Development"
             />
           )}
         </div>

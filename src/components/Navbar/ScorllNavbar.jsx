@@ -49,7 +49,7 @@ const ScorllNavbar = ({ navbar }) => {
         )}
         <img
           // className="mob:w-40 stab:w-64 mx-[15%]"
-          className="bg-black mob:w-[20px] stab:w-[25px] ltab:w-[30px] laptop:w-[40px] mx-[15%]"
+          className="bg-black mob:w-[20px] stab:w-[25px] ltab:w-[30px] laptop:w-[40px] mx-[15%] mob:hidden stab:block"
           src={logo}
           alt="venture desk logo"
         />

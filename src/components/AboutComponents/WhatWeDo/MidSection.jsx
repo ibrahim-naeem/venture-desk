@@ -1,14 +1,16 @@
 import Characteristics from "../shared/Characteristics";
 import img from "../../../assets/WWD-image-1.jpg";
 import ImageZoomBox from "../shared/ImageZoomBox";
-import CenteredText from '../shared/CenteredText';
+import CenteredText from "../shared/CenteredText";
 import TextDivider from "../shared/TextDivider";
 const Card = ({ h1, p }) => (
-    <div className="mob:w-full ltab:w-[25vw] mob:py-5 ltab:my-1 text-center">
-        <h1 className="mob:text-4xl stab:text-5xl ltab:text-6xl text-7xl font-bold">{h1}</h1>
-        <p className="mob:text-sm stab:text-lg ltab:text-xl">{p}</p>
-    </div>
-)
+  <div className="mob:w-full ltab:w-[25vw] mob:py-5 ltab:my-1 text-center">
+    <h1 className="mob:text-4xl stab:text-5xl ltab:text-6xl text-7xl font-bold">
+      {h1}
+    </h1>
+    <p className="mob:text-sm stab:text-lg ltab:text-xl">{p}</p>
+  </div>
+);
 
 export const MidSection = () => {
   return (
@@ -59,20 +61,19 @@ export const MidSection = () => {
         style="text-justified"
       />
       <TextDivider text="Explore Bain" />
-      
-        <div className="w-[80vw] mx-auto flex flex-wrap mb-14">
-          <Characteristics text="What We Do" />
-          <Characteristics text="Awards & Recognition" />
-          <Characteristics text="Our People & Leadership" />
-          <Characteristics text="Diversity, Equity & Inclusion" />
-          <Characteristics text="Social Impact" />
-        </div>
-      
-      
-      <ImageZoomBox
+
+      <div className="w-[80vw] mx-auto flex flex-wrap mb-14">
+        <Characteristics text="What We Do" />
+        <Characteristics text="Awards & Recognition" />
+        <Characteristics text="Our People & Leadership" />
+        <Characteristics text="Diversity, Equity & Inclusion" />
+        <Characteristics text="Social Impact" />
+      </div>
+
+      {/* <ImageZoomBox
         img={img}
         text="Thrive in great company. Explore careers at Bain."
-      />
+      /> */}
     </div>
   );
 };

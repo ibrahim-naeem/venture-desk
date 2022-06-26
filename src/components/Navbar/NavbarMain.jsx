@@ -116,7 +116,7 @@ const NavbarMain = ({ navbar, navMainColor, logoColor }) => {
           />
 
           <span
-            className={` mob:text-sm laptop:text-base font-bold px-2  mob:-mt-1 stab:mt-0     
+            className={` mob:text-xs laptop:text-base font-bold     
             ${
               navMainColor
                 ? "text-slate-400"

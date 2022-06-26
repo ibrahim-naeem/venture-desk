@@ -27,7 +27,8 @@ export const Navbar = ({ h3, p1, p2, p3, p4 }) => {
   return (
     <div
       className={`w-[100vw] flex justify-between mob:px-2 ltab:px-[120px] bg-[#fff] border-b ${
-        navPosition && " w-[100vw] fixed mob:top-[53px] stab:top-[70px]"
+        navPosition &&
+        " w-[100vw] fixed mob:top-[50px] stab:top-[60px] laptop:top-[70px]"
       } `}
     >
       <div className="flex mob:py-1 stab:py-3 ">

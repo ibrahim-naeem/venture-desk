@@ -12,7 +12,7 @@ const Main = () => {
     <div>
       <AboutHeroSection
         background={background}
-        small="About Bain"
+        small="About Venture Desk"
         main="Our People"
         text="We hear over and over again that it feels different to work with us. Why? A uniquely collaborative culture full of passionate people who care more about your success."
       />
